@@ -6,6 +6,8 @@
   <remote fetch="https://git.yoctoproject.org/git" name="yocto"/>
   <remote fetch="https://github.com/Freescale" name="freescale"/>
   <remote fetch="https://github.com/openembedded" name="oe"/>
+  <remote fetch="https://github.com/embeddedarm" name="ts" />
+  <remote fetch="git://github.com/meta-qt5/" name="qt5" />
 
   <project remote="yocto" revision="morty" name="poky" path="sources/poky"/>
   <project remote="yocto" revision="morty" name="meta-freescale" path="sources/meta-freescale"/>
@@ -20,5 +22,9 @@
   <project remote="freescale" revision="morty" name="meta-freescale-3rdparty" path="sources/meta-freescale-3rdparty"/>
   <project remote="freescale" revision="morty" name="meta-freescale-distro" path="sources/meta-freescale-distro"/>
   <project remote="freescale" revision="morty" name="Documentation" path="sources/Documentation"/>
+
+  <project remote="ts" revision="morty" name="meta-ts" path="sources/meta-ts"/>
+
+  <project remote="qt5" revision="morty" name="meta-qt5" path="sources/meta-qt5"/>
 
 </manifest>
