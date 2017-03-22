@@ -1,4 +1,4 @@
-= FSL Community BSP
+= FSL Community BSP - Summit Edition
 
 To get the BSP you need to have `repo` installed and use it as:
 
@@ -15,16 +15,19 @@ Download the BSP source:
 $: PATH=${PATH}:~/bin
 $: mkdir fsl-community-bsp
 $: cd fsl-community-bsp
-$: repo init -u https://github.com/Freescale/fsl-community-bsp-platform -b morty
+$: repo init -u https://github.com/SummitESP/fsl-community-bsp-platform.git -b morty
 $: repo sync
 
 At the end of the commands you have every metadata you need to start work with.
 
-To start a simple image build:
+To start the image build:
 
 [source,console]
-$: source ./setup-environment build
-$: bitbake core-image-minimal
+$: SDKMACHINE=x86_64 MACHINE=tsimx6 DISTRO=fslc-framebuffer source ./setup-environment build
+$: git clone git@github.com:SummitESP/fsl-community-bsp-platform.git
+$: cp fsl-community-bsp-platform/*.conf conf/
+$: bitbake fsl-image-multimedia-full
+$: bitbake meta-toolchain-qt5
 
 You can use any directory to host your build.
 
