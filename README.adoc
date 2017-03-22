@@ -24,7 +24,7 @@ To start the image build:
 
 [source,console]
 $: SDKMACHINE=x86_64 MACHINE=tsimx6 DISTRO=fslc-framebuffer source ./setup-environment build
-$: git clone git@github.com:SummitESP/fsl-community-bsp-platform.git
+$: git clone git@github.com:SummitESP/fsl-community-bsp-platform.git -b morty
 $: cp fsl-community-bsp-platform/*.conf conf/
 $: bitbake fsl-image-multimedia-full meta-toolchain-qt5
 
