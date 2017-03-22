@@ -26,8 +26,15 @@ To start the image build:
 $: SDKMACHINE=x86_64 MACHINE=tsimx6 DISTRO=fslc-framebuffer source ./setup-environment build
 $: git clone git@github.com:SummitESP/fsl-community-bsp-platform.git
 $: cp fsl-community-bsp-platform/*.conf conf/
-$: bitbake fsl-image-multimedia-full
-$: bitbake meta-toolchain-qt5
+$: bitbake fsl-image-multimedia-full meta-toolchain-qt5
+
+The root file system that can be used to create an SD card will be created in:
+
+/build/tmp/deploy/images/tsimx6/fsl-image-multimedia-full-tsimx6.tar.bz2
+
+The installable SDK is found here:
+
+/build/tmp/deploy/sdk/tsimx6/fslc-framebuffer-glibc-x86_64-meta-toolchain-qt5-armv7at2hf-neon-toolchain-2.2.1.sh
 
 You can use any directory to host your build.
 
