@@ -32,6 +32,39 @@ The root file system that can be used to create an SD card will be created in:
 
 /build/tmp/deploy/images/tsimx6/fsl-image-multimedia-full-tsimx6.tar.bz2
 
+To create the SD card from the image, execute the following commands:
+
+[source,console]
+$: sudo mkfs.ext4 /dev/mmcblk0p1
+$: mkdir /mnt/sd
+$: sudo mount /dev/mmcblk0p1 /mnt/sd
+$: sudo tar -xf fsl-image-multimedia-full-tsimx6.tar.bz2 -C /mnt/sd
+$: sudo umount /mnt/sd/
+$: sync
+
+Once the SD card has been written, install it in the embeddedarm device, and connect a USB cable to P2 on the back of the unit.  Then, connect to the provided USB serial via the following command, and power on the device:
+
+[source,console]
+$: sudo picocom -b 115200 /dev/ttyUSB0
+
+When the boot sequence is complete, log in as root with no password.  Using the nano text editor, create the network configuration in /etc/systemd/network/eth0.network:
+
+[source,console]
+$: nano /etc/systemd/network/eth0.network
+
+Then, enter the following into that file:
+
+[source,console]
+----
+[Match]
+Name=eth0
+
+[Network]
+Address=192.168.1.30/24
+Gateway=192.168.1.10
+DNS=192.168.1.10
+----
+
 The installable SDK is found here:
 
 /build/tmp/deploy/sdk/tsimx6/fslc-framebuffer-glibc-x86_64-meta-toolchain-qt5-armv7at2hf-neon-toolchain-2.2.1.sh
