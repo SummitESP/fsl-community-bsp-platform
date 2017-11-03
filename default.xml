@@ -7,7 +7,8 @@
   <remote fetch="https://github.com/Freescale" name="freescale"/>
   <remote fetch="https://github.com/openembedded" name="oe"/>
   <remote fetch="https://github.com/embeddedarm" name="ts" />
-  <remote fetch="git://github.com/meta-qt5/" name="qt5" />
+  <remote fetch="git://github.com/meta-qt5" name="qt5" />
+  <remote fetch="git://github.com/SummitESP" name="summit" />
 
   <project remote="yocto" name="poky" path="sources/poky"
            revision="924e576b8930fd2268d85f0b151e5f68a3c2afce" upstream="morty"/>
@@ -38,5 +39,7 @@
 
   <project remote="qt5" name="meta-qt5" path="sources/meta-qt5"
            revision="3601fd2c5306ac6d5d0d536e0be8cbb90da9b4c1" upstream="morty"/>
+
+  <project remote="summit" revision="master" name="meta-summit" path="sources/meta-summit">
 
 </manifest>
