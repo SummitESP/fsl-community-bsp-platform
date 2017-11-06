@@ -11,34 +11,34 @@
   <remote fetch="git://github.com/SummitESP" name="summit" />
 
   <project remote="yocto" name="poky" path="sources/poky"
-           revision="924e576b8930fd2268d85f0b151e5f68a3c2afce" upstream="morty"/>
+           revision="morty"/>
 
   <project remote="yocto" name="meta-freescale" path="sources/meta-freescale"
-           revision="a398b50b7fc084a9e68cc3000c218d5028522a25" upstream="morty"/>
+           revision="morty"/>
 
   <project remote="oe" name="meta-openembedded" path="sources/meta-openembedded"
-           revision="fe5c83312de11e80b85680ef237f8acb04b4b26e" upstream="morty"/>
+           revision="morty"/>
 
   <project remote="freescale" name="fsl-community-bsp-base" path="sources/base"
-           revision="0b9b4db05ec6a5d96f3a6292f6c94aa963238b11" upstream="morty">
+           revision="morty">
 	<linkfile dest="README" src="README"/>
 	<linkfile dest="setup-environment" src="setup-environment"/>
   </project>
 
   <project remote="freescale" name="meta-freescale-3rdparty" path="sources/meta-freescale-3rdparty"
-           revision="d31308389508945bd4432a6f0213c27eacf6a1b8" upstream="morty"/>
+           revision="morty"/>
 
   <project remote="freescale" name="meta-freescale-distro" path="sources/meta-freescale-distro"
-           revision="cd5c7a2539f40004f74126e9fdf08254fd9a6390" upstream="morty"/>
+           revision="morty"/>
 
   <project remote="freescale" name="Documentation" path="sources/Documentation"
-           revision="4e92d8509dd5b4489549ee61f2c6809e0e0cb04c" upstream="morty"/>
+           revision="morty"/>
 
-  <project remote="summit" name="meta-ts" path="sources/meta-ts"
+  <project remote="ts" name="meta-ts" path="sources/meta-ts"
            revision="morty"/>
 
   <project remote="qt5" name="meta-qt5" path="sources/meta-qt5"
-           revision="3601fd2c5306ac6d5d0d536e0be8cbb90da9b4c1" upstream="morty"/>
+           revision="morty"/>
 
   <project remote="summit" revision="master" name="meta-summit" path="sources/meta-summit"/>
 
