@@ -34,12 +34,12 @@
   <project remote="freescale" name="Documentation" path="sources/Documentation"
            revision="4e92d8509dd5b4489549ee61f2c6809e0e0cb04c" upstream="morty"/>
 
-  <project remote="ts" name="meta-ts" path="sources/meta-ts"
-           revision="5c499dd57813911f5190043ac45a112089156a49" upstream="morty"/>
+  <project remote="summit" name="meta-ts" path="sources/meta-ts"
+           revision="morty"/>
 
   <project remote="qt5" name="meta-qt5" path="sources/meta-qt5"
            revision="3601fd2c5306ac6d5d0d536e0be8cbb90da9b4c1" upstream="morty"/>
 
-  <project remote="summit" revision="master" name="meta-summit" path="sources/meta-summit">
+  <project remote="summit" revision="master" name="meta-summit" path="sources/meta-summit"/>
 
 </manifest>
