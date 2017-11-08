@@ -34,12 +34,12 @@
   <project remote="freescale" name="Documentation" path="sources/Documentation"
            revision="morty"/>
 
-  <project remote="ts" name="meta-ts" path="sources/meta-ts"
-           revision="morty"/>
+  <project remote="summit" name="meta-ts" path="sources/meta-ts"
+           revision="sv-112-ts-silo"/>
 
   <project remote="qt5" name="meta-qt5" path="sources/meta-qt5"
            revision="morty"/>
 
-  <project remote="summit" revision="master" name="meta-summit" path="sources/meta-summit">
+  <project remote="summit" revision="master" name="meta-summit" path="sources/meta-summit"/>
 
 </manifest>
