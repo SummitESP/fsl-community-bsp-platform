@@ -4,8 +4,8 @@
   <remote fetch="https://github.com/openembedded" name="oe"/>
   <remote fetch="https://git.yoctoproject.org/git" name="yocto"/>
   <remote fetch="https://github.com/embeddedarm" name="ts" />
-  <remote fetch="git://github.com/meta-qt5" name="qt5" />
-  <remote fetch="git://github.com/SummitESP" name="summit" />
+  <remote fetch="https://github.com/meta-qt5" name="qt5" />
+  <remote fetch="https://github.com/SummitESP" name="summit" />
 
   <default revision="morty" sync-j="4"/>
 
