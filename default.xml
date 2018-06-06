@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
+  <default sync-j="4"/>
   <remote fetch="https://github.com/Freescale" name="freescale"/>
   <remote fetch="https://github.com/openembedded" name="oe"/>
   <remote fetch="https://git.yoctoproject.org/git" name="yocto"/>
@@ -7,20 +8,18 @@
   <remote fetch="https://github.com/meta-qt5" name="qt5" />
   <remote fetch="https://github.com/SummitESP" name="summit" />
 
-  <default sync-j="4"/>
-
   <project name="Documentation" path="sources/Documentation" remote="freescale" revision="morty"/>
-  <project name="fsl-community-bsp-base" path="sources/base" remote="freescale" revision="morty">
+  <project name="fsl-community-bsp-base" path="sources/base" remote="freescale" revision="0b9b4db05ec6a5d96f3a6292f6c94aa963238b11">
     <linkfile dest="README" src="README"/>
     <linkfile dest="setup-environment" src="setup-environment"/>
   </project>
-  <project name="meta-freescale" path="sources/meta-freescale" remote="yocto" upstream="morty" revision="morty"/>
-  <project name="meta-freescale-3rdparty" path="sources/meta-freescale-3rdparty" remote="freescale" upstream="morty" revision="morty"/>
-  <project name="meta-freescale-distro" path="sources/meta-freescale-distro" remote="freescale" upstream="morty" revision="morty"/>
-  <project name="meta-openembedded" path="sources/meta-openembedded" remote="oe" upstream="morty" revision="morty"/>
-  <project name="poky" path="sources/poky" remote="yocto" upstream="morty" revision="morty"/>
-  <project name="meta-ts" path="sources/meta-ts" remote="ts" upstream="morty" revision="morty"/>
-  <project name="meta-qt5" path="sources/meta-qt5" remote="qt5" upstream="morty" revision="morty"/>
+  <project name="meta-freescale" path="sources/meta-freescale" remote="yocto" upstream="morty" revision="d55e16bc476982dfb9415bf696ed35e84068a433"/>
+  <project name="meta-freescale-3rdparty" path="sources/meta-freescale-3rdparty" remote="freescale" upstream="morty" revision="e55167c3c2770c07a475342f99cc2a3a23fbfa0c"/>
+  <project name="meta-freescale-distro" path="sources/meta-freescale-distro" remote="freescale" upstream="morty" revision="cd5c7a2539f40004f74126e9fdf08254fd9a6390"/>
+  <project name="meta-openembedded" path="sources/meta-openembedded" remote="oe" upstream="morty" revision="b40116cf457b88a2db14b86fda9627fb34d56ae6"/>
+  <project name="poky" path="sources/poky" remote="yocto" upstream="morty" revision="13c465663d0d1835773fb30baba345396cf0906e"/>
+  <project name="meta-ts" path="sources/meta-ts" remote="ts" upstream="morty" revision="a8f48a8eec905e554a004e4a9eb8f9300f9a0728"/>
+  <project name="meta-qt5" path="sources/meta-qt5" remote="qt5" upstream="morty" revision="f37449f25e3e58b76a64a4398d4f10ce7dc9206c"/>
   <project name="meta-summit" path="sources/meta-summit" remote="summit" upstream="master" revision="master"/>
 
 </manifest>
