@@ -7,20 +7,20 @@
   <remote fetch="https://github.com/meta-qt5" name="qt5" />
   <remote fetch="https://github.com/SummitESP" name="summit" />
 
-  <default revision="morty" sync-j="4"/>
+  <default sync-j="4"/>
 
   <project name="Documentation" path="sources/Documentation" remote="freescale" revision="morty"/>
   <project name="fsl-community-bsp-base" path="sources/base" remote="freescale" revision="morty">
     <linkfile dest="README" src="README"/>
     <linkfile dest="setup-environment" src="setup-environment"/>
   </project>
-  <project name="meta-freescale" path="sources/meta-freescale" remote="yocto" upstream="morty"/>
-  <project name="meta-freescale-3rdparty" path="sources/meta-freescale-3rdparty" remote="freescale" upstream="morty"/>
-  <project name="meta-freescale-distro" path="sources/meta-freescale-distro" remote="freescale" upstream="morty"/>
-  <project name="meta-openembedded" path="sources/meta-openembedded" remote="oe" upstream="morty"/>
-  <project name="poky" path="sources/poky" remote="yocto" upstream="morty"/>
-  <project name="meta-ts" path="sources/meta-ts" remote="ts" upstream="morty"/>
-  <project name="meta-qt5" path="sources/meta-qt5" remote="qt5" upstream="morty"/>
-  <project name="meta-summit" path="sources/meta-summit" remote="summit" upstream="master"/>
+  <project name="meta-freescale" path="sources/meta-freescale" remote="yocto" upstream="morty" revision="morty"/>
+  <project name="meta-freescale-3rdparty" path="sources/meta-freescale-3rdparty" remote="freescale" upstream="morty" revision="morty"/>
+  <project name="meta-freescale-distro" path="sources/meta-freescale-distro" remote="freescale" upstream="morty" revision="morty"/>
+  <project name="meta-openembedded" path="sources/meta-openembedded" remote="oe" upstream="morty" revision="morty"/>
+  <project name="poky" path="sources/poky" remote="yocto" upstream="morty" revision="morty"/>
+  <project name="meta-ts" path="sources/meta-ts" remote="ts" upstream="morty" revision="morty"/>
+  <project name="meta-qt5" path="sources/meta-qt5" remote="qt5" upstream="morty" revision="morty"/>
+  <project name="meta-summit" path="sources/meta-summit" remote="summit" upstream="master" revision="master"/>
 
 </manifest>
