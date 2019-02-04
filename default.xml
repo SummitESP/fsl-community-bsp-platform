@@ -6,7 +6,7 @@
   <remote fetch="https://git.yoctoproject.org/git" name="yocto"/>
   <remote fetch="https://github.com/embeddedarm" name="ts" />
   <remote fetch="https://github.com/meta-qt5" name="qt5" />
-  <remote fetch="https://github.com/SummitESP" name="summit" />
+  <remote fetch="ssh://git@github.com/SummitESP" name="summit" />
 
   <project name="Documentation" path="sources/Documentation" remote="freescale" revision="morty"/>
   <project name="fsl-community-bsp-base" path="sources/base" remote="freescale" revision="0b9b4db05ec6a5d96f3a6292f6c94aa963238b11">
