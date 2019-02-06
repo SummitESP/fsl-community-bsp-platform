@@ -6,7 +6,7 @@
   <remote fetch="https://git.yoctoproject.org/git" name="yocto"/>
   <remote fetch="https://github.com/embeddedarm" name="ts" />
   <remote fetch="https://github.com/meta-qt5" name="qt5" />
-  <remote fetch="https://github.com/SummitESP" name="summit" />
+  <remote fetch="ssh://git@github.com/SummitESP" name="summit" />
 
   <project name="Documentation" path="sources/Documentation" remote="freescale" revision="morty"/>
   <project name="fsl-community-bsp-base" path="sources/base" remote="freescale" revision="0b9b4db05ec6a5d96f3a6292f6c94aa963238b11">
@@ -20,6 +20,6 @@
   <project name="poky" path="sources/poky" remote="yocto" upstream="morty" revision="13c465663d0d1835773fb30baba345396cf0906e"/>
   <project name="meta-ts" path="sources/meta-ts" remote="ts" upstream="morty" revision="a8f48a8eec905e554a004e4a9eb8f9300f9a0728"/>
   <project name="meta-qt5" path="sources/meta-qt5" remote="qt5" upstream="morty" revision="f37449f25e3e58b76a64a4398d4f10ce7dc9206c"/>
-  <project name="meta-summit" path="sources/meta-summit" remote="summit" upstream="master" revision="master"/>
+  <project name="meta-summit" path="sources/meta-summit" remote="summit" upstream="master" revision="89f165f5aeaafa9c421ad50d512d15c222f7f354"/>
 
 </manifest>
